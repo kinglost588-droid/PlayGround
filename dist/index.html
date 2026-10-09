@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PanVK Mali Performance — beta.18-r3</title>
+<style>
+  :root { color-scheme: dark; --bg:#0b0f1a; --card:#141b2e; --accent:#4ade80; --muted:#94a3b8; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:#e2e8f0; }
+  header { padding:32px 24px; text-align:center; border-bottom:1px solid #1e293b; }
+  header h1 { margin:0 0 8px; font-size:28px; }
+  header p { margin:4px 0; color:var(--muted); }
+  .badge { display:inline-block; background:#1e293b; border:1px solid #334155; padding:4px 12px; border-radius:999px; font-size:13px; margin-top:8px; }
+  .badge strong { color:var(--accent); }
+  main { max-width:1024px; margin:0 auto; padding:24px; display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .card { background:var(--card); border:1px solid #1e293b; border-radius:12px; padding:18px; }
+  .card h2 { margin:0 0 10px; font-size:18px; }
+  .card ul { margin:0; padding-left:18px; color:#cbd5e1; font-size:14px; line-height:1.6; }
+  .card p { color:#cbd5e1; font-size:14px; line-height:1.6; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th, td { text-align:left; padding:8px; border-bottom:1px solid #1e293b; }
+  th { color:var(--muted); font-weight:600; }
+  footer { text-align:center; padding:24px; color:var(--muted); font-size:13px; }
+  .cta { text-align:center; padding:8px 24px 24px; }
+  .cta button { background:var(--accent); color:#052e16; border:0; border-radius:8px; padding:12px 24px; font-size:16px; font-weight:700; cursor:pointer; }
+</style>
+</head>
+<body>
+<header>
+  <h1>PanVK Mali Performance</h1>
+  <p>Driver experimental para Mali-G615 MC6 (POCO X6 Pro) — ARM64</p>
+  <div class="badge">Versão experimental <strong>beta.18-r3</strong> · Base PanVK / Mesa 26.3.0-devel · Vulkan 1.4</div>
+</header>
+<div class="cta">
+  <button type="button">Start</button>
+  <p style="color:#94a3b8;font-size:13px">Página estática de status do projeto R3. Build ARM64 avaliado em Winlator, GameHub, BannerHub, Eden, Nyushu e Strato.</p>
+</div>
+<main>
+  <section class="card">
+    <h2>Identificação do driver</h2>
+    <table>
+      <tr><th>Campo</th><th>Configuração</th></tr>
+      <tr><td>Nome</td><td>PanVK Mali Performance</td></tr>
+      <tr><td>Versão</td><td>beta.18-r3</td></tr>
+      <tr><td>GPU principal</td><td>Mali-G615 MC6</td></tr>
+      <tr><td>Arquitetura</td><td>ARM64</td></tr>
+      <tr><td>Base</td><td>PanVK / Mesa</td></tr>
+      <tr><td>Objetivo</td><td>Performance + estabilidade</td></tr>
+      <tr><td>Vulkan</td><td>Recursos realmente implementados</td></tr>
+    </table>
+  </section>
+  <section class="card">
+    <h2>FPS e desempenho</h2>
+    <ul>
+      <li>Otimização de pipelines gráficos</li>
+      <li>Redução do custo de compilação de shaders</li>
+      <li>Cache de shaders e pipelines</li>
+      <li>Sincronização CPU/GPU</li>
+      <li>Redução de trabalho desnecessário</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Glitches gráficos</h2>
+    <ul>
+      <li>Iluminação e sombras</li>
+      <li>Texturas e renderização</li>
+      <li>Formatos de imagem e compressão</li>
+      <li>Sincronização de memória</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Stutter</h2>
+    <ul>
+      <li>Compilação de shaders</li>
+      <li>Reutilização de pipelines</li>
+      <li>Sem regressões de estabilidade</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Compatibilidade</h2>
+    <p>Winlator (DXVK + Vulkan) · GameHub / BannerHub · Eden, Nyushu e Strato. Um único pacote ARM64 não garante todos: depende de ICD, loader Vulkan, extensões e interface Android.</p>
+  </section>
+  <section class="card">
+    <h2>Relatório PanProbe</h2>
+    <p>Base atual: PanVK-kbase beta.18-rc2, Mesa 26.3.0-devel, requisitos básicos Vulkan 1.4 atendidos. Trocar o nome para beta.18-r3 não atualiza o driver — é preciso modificar, compilar e testar.</p>
+  </section>
+</main>
+<footer>PanVK Mali Performance R3 · build estático de status · Vulkan preservado, sem extensões inventadas</footer>
+</body>
+</html>
